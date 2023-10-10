@@ -1,0 +1,133 @@
+@import "nullstyle.scss";
+@import "header.scss";
+@import "colors.scss";
+@import "footer.scss";
+body {
+	font-family: "Montserrat", sans-serif;
+}
+.contact {
+	max-width: 80%;
+	display: flex;
+	margin: auto;
+	gap: 60px;
+	margin-bottom: 60px;
+}
+.contact-left {
+	font-size: 21px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 30px;
+	width: 55%;
+	&__text {
+		color: var(--main-regular, #323264);
+		padding-bottom: 30px;
+		border-bottom: 4px solid var(--grey-separator);
+		margin-bottom: 30px;
+	}
+	&__num {
+		color: var(--main-alt, #46466e);
+		margin-bottom: 15px;
+	}
+	&__email {
+		color: var(--active-regular, #24a3ff);
+		padding-bottom: 30px;
+		border-bottom: 4px solid var(--grey-separator);
+		margin-bottom: 30px;
+	}
+	&__facebook {
+		color: var(--active-regular, #24a3ff);
+		font-size: 12px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 16px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+}
+.contact-right {
+	border-radius: 12px;
+	background: var(--grey-bg, #f5f5fa);
+	width: 35%;
+	&__form {
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+	&__header {
+		font-size: 30px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		background: var(--red-text-gradient, linear-gradient(90deg, #f0145a 0.84%, #ef8080 99.96%));
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	input {
+		border-radius: 8px;
+		height: 56px;
+		max-width: 590px;
+		padding: 15px;
+		width: auto;
+		min-width: 255px;
+	}
+	.name {
+	}
+	.message {
+		padding-top: 25px;
+		padding-bottom: 75px;
+	}
+	&__header2 {
+		color: var(--grey-text, #b3b3ba);
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+	}
+	.num {
+	}
+	.email {
+	}
+	.btn {
+		color: var(--basic-white, #fff);
+		text-align: center;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		display: inline-flex;
+		padding: 18px 30px;
+		justify-content: center;
+		align-items: flex-start;
+		gap: 10px;
+		border-radius: 12px;
+		background: var(--active-regular, #24a3ff);
+		box-shadow: 0px 0px 20px 0px rgba(36, 163, 255, 0.5);
+		&:hover {
+			background: var(--active-hover, #0085ff);
+		}
+		&:active {
+			background: var(--active-active, #006ccf);
+		}
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.contact {
+		flex-direction: column;
+		&-left {
+			width: 100%;
+		}
+		&-right {
+			width: 100%;
+		}
+	}
+}
+@media screen and (max-width: 600px) {
+}
