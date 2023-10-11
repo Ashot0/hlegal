@@ -20,6 +20,10 @@ a:active {
   outline: none;
 }
 
+a:hover {
+  color: var(--Accent, #f0145a);
+}
+
 nav,
 footer,
 header,
@@ -88,6 +92,65 @@ h6 {
 .header {
   padding: 50px 60px 40px 60px;
 }
+.header .menu {
+  z-index: 10;
+  display: none;
+  position: fixed;
+  margin: -10px;
+  width: 100%;
+  height: 100%;
+  background: var(--main-regular, #323264);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .menu .menu__wrapper {
+  padding: 12px;
+  width: 90vw;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 5%;
+  opacity: 1;
+  border-radius: 12px;
+  background: var(--basic-white, #fff);
+  display: flex;
+  flex-direction: column;
+}
+.header .menu .menu__close {
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  align-items: end;
+  justify-content: end;
+}
+.header .menu .menu__boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.header .menu .menu__box {
+  border-radius: 12px;
+  background: var(--grey-bg, #f5f5fa);
+  padding: 7px 0px;
+  text-align: center;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.header .menu .menu__box a {
+  color: var(--active-regular, #24a3ff);
+}
+.header .menu .menu__box .active-page {
+  color: var(--Accent, #f0145a);
+}
+.header .menu .menu__box:active {
+  background: var(--grey-separator, #e6e6f0);
+}
+.header__burger {
+  display: none;
+}
 .header__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -118,6 +181,13 @@ h6 {
   padding-bottom: 1px;
   border-bottom: 2px solid var(--Accent, #f0145a);
 }
+.header__wrapper ul li .white-links {
+  color: var(--basic-white, #fff);
+}
+.header__wrapper ul li .white-links:hover {
+  padding-bottom: 1px;
+  border-bottom: 2px solid var(--basic-white, #fff);
+}
 .header__left-block {
   flex-basis: 40%;
   order: 1;
@@ -137,6 +207,15 @@ h6 {
 }
 .header__right-block_2 {
   order: 3;
+}
+.header__right-block .facebook-header {
+  width: 24px;
+  height: 24px;
+  background-image: url(../img/AboutUsAssets/Facebook-Header.svg);
+}
+.header__right-block .facebook-header:hover {
+  background-image: url(../img/icons/Facebook-Header.svg);
+  cursor: pointer;
 }
 .header__right-block .num {
   font-weight: bold;
@@ -172,10 +251,39 @@ h6 {
 }
 @media screen and (max-width: 600px) {
   .header {
-    padding: 20px 30px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 100%;
+    width: 100%;
   }
   .header__wrapper {
+    width: 100%;
     gap: 20px;
+    justify-content: space-between;
+  }
+  .header__right-block {
+    display: none;
+  }
+  .header__left-block {
+    overflow: hidden;
+    max-width: 50%;
+    width: -moz-fit-content;
+    width: fit-content;
+    order: 1;
+  }
+  .header__left-block a {
+    width: 100%;
+  }
+  .header__left-block a img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+  }
+  .header__burger {
+    display: block;
+    order: 2;
   }
 }
 :root {
@@ -226,6 +334,10 @@ h6 {
   font-weight: 700;
   line-height: normal;
 }
+.footer-box .blue_2:hover {
+  color: var(--Accent, #f0145a);
+  cursor: pointer;
+}
 .footer-box .num {
   color: var(--main-alt, #46466e);
   text-align: right;
@@ -252,6 +364,15 @@ h6 {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+}
+.footer-left-down .facebook-footer {
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/AboutUsAssets/Facebook-Footer.svg);
+}
+.footer-left-down .facebook-footer:hover {
+  background-image: url(../img/icons/Facebook-Footer.svg);
+  cursor: pointer;
 }
 .footer-right {
   color: var(--grey-text, #b3b3ba);
@@ -345,14 +466,17 @@ body {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  border-radius: 10px;
 }
 .switch__pos:hover {
   background: var(--grey-bg, #f5f5fa);
-  border-radius: 10px;
+  cursor: pointer;
 }
 .switch__pos_active {
   background: var(--basic-white, #fff);
-  border-radius: 10px;
+}
+.switch__pos_active:hover {
+  background: var(--basic-white, #fff);
 }
 
 .publication {

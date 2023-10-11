@@ -20,6 +20,10 @@ a:active {
   outline: none;
 }
 
+a:hover {
+  color: var(--Accent, #f0145a);
+}
+
 nav,
 footer,
 header,

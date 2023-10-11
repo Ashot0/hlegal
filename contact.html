@@ -37,7 +37,7 @@
 				<img src="./img/AboutUsAssets/Dot separator.svg" alt="">
 				<p class="num">0800 211 927</p>
 				<img src="./img/AboutUsAssets/Dot separator.svg" alt="">
-				<img src="./img/AboutUsAssets/Facebook-Header.svg" alt="">
+				<div class="facebook-header"></div>
 			</div>
 			<nav class="header__right-block header__right-block_2">
 				<ul>
@@ -48,6 +48,23 @@
 					<li><a class="active" href="./contact.html">contact</a></li>
 				</ul>
 			</nav>
+			<div class="header__burger">
+				<img id="burger" onclick="burgerm()" src="./img/icons/Hamburger.svg" alt="">
+			</div>
+		</div>
+		<div id="menu" style="display: none" class="menu">
+			<div class="menu__wrapper">
+				<div class="menu__close">
+					<img onclick="burgerm()" src="./img/icons/Close.svg" alt="">
+				</div>
+				<div class="menu__boxes">
+					<div class="menu__box"><a href="./aboutus.html">about us</a></div>
+					<div class="menu__box"><a href="./services.html">services</a></div>
+					<div class="menu__box"><a href="./team.html">team</a></div>
+					<div class="menu__box"><a href="./publication.html">publications</a></div>
+					<div class="menu__box"><a href="./contact.html">contact</a></div>
+				</div>
+			</div>
 		</div>
 	</header>
 	<main class="wrapper">
@@ -57,7 +74,7 @@
 				<div class="contact-left__num">0800 211 927</div>
 				<div class="contact-left__email">contact@forstudy.space</div>
 				<div class="contact-left__facebook">
-					<img src="./img/Contact/Facebook.svg" alt="">
+					<div class="facebook-hover"></div>
 					<p>Our page <br> on facebook</p>
 				</div>
 			</section>
@@ -67,7 +84,7 @@
 					<input class="name" type="text" placeholder="Name" name="name" id="">
 					<input class="message" type="text" placeholder="Message" name="message" id="">
 					<h3 class="contact-right__header2">How to answer you?</h3>
-					<input class="num" type="number" placeholder="Phone number" name="number" id="">
+					<input class="num" type="number" inputmode="numeric" placeholder="Phone number" name="number" id="">
 					<input class="email" type="email" placeholder="Email" name="email" id="">
 					<button class="btn" type="submit">Send message</button>
 				</form>
@@ -83,7 +100,7 @@
 					<div class="blue_1">ON MAP</div>
 				</div>
 				<div class="footer-left-down">
-					<img src="./img/AboutUsAssets/Facebook-Footer.svg" alt="">
+					<div class="facebook-footer"></div>
 					<img src="./img/AboutUsAssets/Dot separator.svg" alt="">
 					<div class="num">0800 211 927</div>
 					<img src="./img/AboutUsAssets/Dot separator.svg" alt="">

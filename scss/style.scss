@@ -77,6 +77,10 @@ body {
 			font-style: normal;
 			font-weight: 700;
 			line-height: normal;
+			&:hover {
+				color: var(--Accent, #f0145a);
+				cursor: pointer;
+			}
 		}
 		.active {
 			text-align: right;
@@ -240,6 +244,22 @@ body {
 		font-style: normal;
 		font-weight: 400;
 		line-height: 22px;
+	}
+	&__dots {
+		justify-content: center;
+		display: flex;
+		gap: 16px;
+		margin: 30px 0 0 0;
+	}
+	&__dot {
+		border-radius: 50%;
+		width: 16px;
+		height: 16px;
+		background-color: var(--active-regular);
+		opacity: 0.2;
+		&:hover {
+			opacity: 1;
+		}
 	}
 }
 .clients {
@@ -449,6 +469,9 @@ body {
 		}
 		flex-direction: column;
 	}
+	.publication {
+		max-width: none;
+	}
 }
 @media screen and (max-width: 600px) {
 	.client {
@@ -456,5 +479,13 @@ body {
 	}
 	.hero {
 		padding: 60px 15px;
+	}
+	.header__left-block {
+		img {
+		}
+		padding-right: 20%;
+	}
+	.header {
+		overflow: hidden;
 	}
 }

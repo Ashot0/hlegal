@@ -28,6 +28,10 @@
 				font-style: normal;
 				font-weight: 700;
 				line-height: normal;
+				&:hover {
+					color: var(--Accent, #f0145a);
+					cursor: pointer;
+				}
 			}
 		}
 		.num {
@@ -56,6 +60,15 @@
 			align-items: center;
 			gap: 10px;
 			flex-wrap: wrap;
+			.facebook-footer {
+				width: 38px;
+				height: 38px;
+				background-image: url(../img/AboutUsAssets/Facebook-Footer.svg);
+				&:hover {
+					background-image: url(../img/icons/Facebook-Footer.svg);
+					cursor: pointer;
+				}
+			}
 		}
 	}
 	&-right {

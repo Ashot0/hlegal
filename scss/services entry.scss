@@ -143,6 +143,9 @@ body {
 		line-height: normal;
 		letter-spacing: 1px;
 		text-transform: uppercase;
+		&:hover {
+			color: var(--Accent, #f0145a);
+		}
 	}
 	.recommended-title {
 		margin-bottom: 30px;

@@ -30,6 +30,10 @@
   font-weight: 700;
   line-height: normal;
 }
+.footer-box .blue_2:hover {
+  color: var(--Accent, #f0145a);
+  cursor: pointer;
+}
 .footer-box .num {
   color: var(--main-alt, #46466e);
   text-align: right;
@@ -56,6 +60,15 @@
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+}
+.footer-left-down .facebook-footer {
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/AboutUsAssets/Facebook-Footer.svg);
+}
+.footer-left-down .facebook-footer:hover {
+  background-image: url(../img/icons/Facebook-Footer.svg);
+  cursor: pointer;
 }
 .footer-right {
   color: var(--grey-text, #b3b3ba);

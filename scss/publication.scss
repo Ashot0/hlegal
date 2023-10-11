@@ -64,13 +64,16 @@ body {
 		font-style: normal;
 		font-weight: 700;
 		line-height: normal;
+		border-radius: 10px;
 		&:hover {
 			background: var(--grey-bg, #f5f5fa);
-			border-radius: 10px;
+			cursor: pointer;
 		}
 		&_active {
 			background: var(--basic-white, #fff);
-			border-radius: 10px;
+			&:hover {
+				background: var(--basic-white, #fff);
+			}
 		}
 	}
 }
