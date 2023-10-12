@@ -226,6 +226,7 @@ h6 {
 }
 .header__right-block .num {
   font-weight: bold;
+  color: var(--gray-text);
 }
 .header__lang {
   display: flex;
@@ -496,7 +497,7 @@ body {
 }
 
 .content {
-  background: center top/contain url(../img/Homepage/Symbol.svg) no-repeat;
+  background: center/contain url(../img/Homepage/Symbol.svg) no-repeat;
   pointer-events: none;
   width: 100%;
   margin-top: -173px;
@@ -540,7 +541,7 @@ body {
   flex-direction: column;
   gap: 30px;
 }
-.experience .experience-left p {
+.experience .experience-left a {
   color: var(--grey-text, #b3b3ba);
   text-align: right;
   font-size: 38px;
@@ -548,7 +549,7 @@ body {
   font-weight: 700;
   line-height: normal;
 }
-.experience .experience-left p:hover {
+.experience .experience-left a:hover {
   color: var(--Accent, #f0145a);
   cursor: pointer;
 }
@@ -932,7 +933,7 @@ body {
     align-items: center;
     flex-direction: column;
   }
-  .experience .experience-left p {
+  .experience .experience-left a {
     text-align: center;
   }
   .experience .experience-right {

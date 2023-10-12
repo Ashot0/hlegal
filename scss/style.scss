@@ -33,7 +33,7 @@ body {
 	}
 }
 .content {
-	background: center top / contain url(../img/Homepage/Symbol.svg) no-repeat;
+	background: center / contain url(../img/Homepage/Symbol.svg) no-repeat;
 	pointer-events: none;
 	width: 100%;
 	margin-top: -173px;
@@ -74,7 +74,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
-		p {
+		a {
 			color: var(--grey-text, #b3b3ba);
 			text-align: right;
 			font-size: 38px;
@@ -460,7 +460,7 @@ body {
 		.experience-left {
 			width: 100%;
 			align-items: center;
-			p {
+			a {
 				text-align: center;
 			}
 

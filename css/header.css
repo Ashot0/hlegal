@@ -135,6 +135,7 @@
 }
 .header__right-block .num {
   font-weight: bold;
+  color: var(--gray-text);
 }
 .header__lang {
   display: flex;
