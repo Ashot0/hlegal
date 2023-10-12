@@ -7,7 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
 	<meta charset="UTF-8">
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -26,9 +26,9 @@
 				<div class="header-mobile-title header-mobile-title_dark">
 					<div class="header-mobile-title__box">
 						<div class="header__lang">
-							<p>УК</p>
-							<p>РУ</p>
-							<p class="active">EN</p>
+							<a>УК</a>
+							<a>РУ</a>
+							<a class="active">EN</a>
 						</div>
 						<a href="tel:0800211927" class="num">0800 211 927</a>
 					</div>
@@ -39,16 +39,16 @@
 					</div>
 					<div class="header__right-block header__right-block_1">
 						<div class="header__lang">
-							<p>УК</p>
-							<p>РУ</p>
-							<p class="active">EN</p>
+							<a>УК</a>
+							<a>РУ</a>
+							<a class="active">EN</a>
 						</div>
 						<img src="./img/AboutUsAssets/Dot separator.svg" alt="">
 						<p>Kyiv, Mechnikova str, 14/1</p>
 						<img src="./img/AboutUsAssets/Dot separator.svg" alt="">
 						<a href="tel:0800211927" class="num">0800 211 927</a>
 						<img src="./img/AboutUsAssets/Dot separator.svg" alt="">
-						<a class="facebook-header"></a>
+						<a class="header__icon-facebook"></a>
 					</div>
 					<nav class="header__right-block header__right-block_2">
 						<ul>
@@ -68,20 +68,20 @@
 						<div class="menu__close">
 							<img onclick="burgerm()" src="./img/icons/Close.svg" alt="">
 						</div>
-						<div class="menu__boxes">
-							<div class="menu__box"><a href="./aboutus.html">about us</a></div>
-							<div class="menu__box"><a class="active-page" href="./services.html">services</a></div>
-							<div class="menu__box"><a href="./team.html">team</a></div>
-							<div class="menu__box"><a href="./publication.html">publications</a></div>
-							<div class="menu__box"><a href="./contact.html">contact</a></div>
-						</div>
+						<ul class="menu__boxes">
+							<li class="menu__box"><a href="./aboutus.html">about us</a></li>
+							<li class="menu__box"><a class="active-page" href="./services.html">services</a></li>
+							<li class="menu__box"><a href="./team.html">team</a></li>
+							<li class="menu__box"><a href="./publication.html">publications</a></li>
+							<li class="menu__box"><a href="./contact.html">contact</a></li>
+						</ul>
 					</div>
 				</div>
 			</header>
 			<section class="hero">
 				<div class="hero__wrapper">
 					<div class="hero__img"><img src="./img/Services/Ecommerce.svg" alt=""></div>
-					<div class="hero__title">IT and e-commerce</div>
+					<h1 class="hero__title">IT and e-commerce</h1>
 					<p class="hero__text">An endless stream of contracts, tax issues, labor relations, corporate papers
 						- legal work distracts you from doing
 						business. But there is not much work to do to hire an in-house lawyer.</p>
@@ -92,7 +92,7 @@
 					<button type="button" class="hero__btn">Free consultation</button>
 				</div>
 				<div class="hero-services">
-					<div class="hero-services__title">Services in this area:</div>
+					<h2 class="hero-services__title">Services in this area:</h2>
 					<div class="hero-services__boxes">
 						<div class="hero-services__box">
 							<ul>
@@ -133,7 +133,6 @@
 							</ul>
 						</div>
 					</div>
-
 				</div>
 			</section>
 		</div>
@@ -152,45 +151,45 @@
 				<div class="publication">
 					<div class="publication__img"><img src="./img/Publications/Publication-1.svg" alt=""></div>
 					<div class="publication__wrapper">
-						<div class="publication__header">
+						<h3 class="publication__header">
 							<a href="./publication entry.html">Equity associate</a>
-						</div>
-						<div class="publication__date">April 22</div>
-						<div class="publication__text">
+						</h3>
+						<data class="publication__date">April 22</data>
+						<p class="publication__text">
 							I'm a jun on projects. I am a co-owner of a law firm. How it
 							happened. Before entering my parents told me that if I…
-						</div>
+						</p>
 					</div>
 				</div>
 				<div class="publication">
 					<div class="publication__img"><img src="./img/Publications/Publication-2.svg" alt=""></div>
 					<div class="publication__wrapper">
-						<div class="publication__header">
+						<h3 class="publication__header">
 							<a href="./publication entry.html">
 								Penalty for the Good Corporation: what will happen to Google
 								and others for violating the GDPR
 							</a>
-						</div>
-						<div class="publication__date">September 29</div>
-						<div class="publication__text">
+						</h3>
+						<data class="publication__date">September 29</data>
+						<p class="publication__text">
 							And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua
 							January 21 National
 							Commission for Data Protection.
-						</div>
+						</p>
 					</div>
 				</div>
 				<div class="publication">
 					<div class="publication__img"><img src="./img/Publications/Publication-3.jpg" alt=""></div>
 					<div class="publication__wrapper">
-						<div class="publication__header">
+						<h3 class="publication__header">
 							<a href="./publication entry.html">Millennial Testament</a>
-						</div>
-						<div class="publication__date">August 19</div>
-						<div class="publication__text">
+						</h3>
+						<data class="publication__date">August 19</data>
+						<p class="publication__text">
 							What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical
 							legacy of the Ukrainian
 							generation X looks like this: an apartment in…
-						</div>
+						</p>
 					</div>
 				</div>
 
@@ -202,9 +201,9 @@
 		<div class="footer-box">
 			<div class="footer-left">
 				<div class="footer-left-up">
-					<div>Kyiv, Mechnikova str, 14/1</div>
+					<p>Kyiv, Mechnikova str, 14/1</p>
 					<img src="./img/AboutUsAssets/Dot separator.svg" alt="">
-					<div class="blue_1">ON MAP</div>
+					<a class="blue_1">ON MAP</a>
 				</div>
 				<div class="footer-left-down">
 					<a class="facebook-footer"></a>
@@ -214,7 +213,7 @@
 					<a href="mailto:contact@forstudy.space" class="blue_2">contact@forstudy.space</a>
 				</div>
 			</div>
-			<div class="footer-right">© 2021 HLEGAL Law company, LLC</div>
+			<p class="footer-right">© 2021 HLEGAL Law company, LLC</p>
 		</div>
 	</footer>
 	<script src="./js/script.js"></script>

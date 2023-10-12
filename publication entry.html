@@ -7,7 +7,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="shortcut icon" href="/img/icons/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="./img/icons/favicon.ico" type="image/x-icon">
 	<meta charset="UTF-8">
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,34 +20,33 @@
 </head>
 
 <body>
-
 	<header class="header">
 		<div class="header-mobile-title header-mobile-title_white">
 			<div class="header-mobile-title__box">
 				<div class="header__lang">
-					<p>УК</p>
-					<p>РУ</p>
-					<p class="active">EN</p>
+					<a>УК</a>
+					<a>РУ</a>
+					<a class="active">EN</a>
 				</div>
 				<a href="tel:0800211927" class="num">0800 211 927</a>
 			</div>
 		</div>
 		<div class="header__wrapper">
 			<div class="header__left-block">
-				<a href="./index.html"><img src="./img/AboutUsAssets/Logo.svg" alt=""></a>
+				<a href="./index.html"><img src="./img/Publications/Logo.svg" alt=""></a>
 			</div>
 			<div class="header__right-block header__right-block_1">
 				<div class="header__lang">
-					<p>УК</p>
-					<p>РУ</p>
-					<p class="active">EN</p>
+					<a>УК</a>
+					<a>РУ</a>
+					<a class="active">EN</a>
 				</div>
 				<img src="./img/AboutUsAssets/Dot separator.svg" alt="">
 				<p>Kyiv, Mechnikova str, 14/1</p>
 				<img src="./img/AboutUsAssets/Dot separator.svg" alt="">
 				<a href="tel:0800211927" class="num">0800 211 927</a>
 				<img src="./img/AboutUsAssets/Dot separator.svg" alt="">
-				<a class="facebook-header"></a>
+				<a class="header__icon-facebook"></a>
 			</div>
 			<nav class="header__right-block header__right-block_2">
 				<ul>
@@ -64,16 +63,16 @@
 		</div>
 		<div id="menu" style="display: none" class="menu">
 			<div class="menu__wrapper">
-				<div class="menu__close">
+				<a class="menu__close">
 					<img onclick="burgerm()" src="./img/icons/Close.svg" alt="">
-				</div>
-				<div class="menu__boxes">
-					<div class="menu__box"><a href="./aboutus.html">about us</a></div>
-					<div class="menu__box"><a href="./services.html">services</a></div>
-					<div class="menu__box"><a href="./team.html">team</a></div>
-					<div class="menu__box"><a class="active-page" href="./publication.html">publications</a></div>
-					<div class="menu__box"><a href="./contact.html">contact</a></div>
-				</div>
+				</a>
+				<ul class="menu__boxes">
+					<li class="menu__box"><a href="./aboutus.html">about us</a></li>
+					<li class="menu__box"><a href="./services.html">services</a></li>
+					<li class="menu__box"><a href="./team.html">team</a></li>
+					<li class="menu__box"><a class="active-page" href="./publication.html">publications</a></li>
+					<li class="menu__box"><a href="./contact.html">contact</a></li>
+				</ul>
 			</div>
 		</div>
 	</header>
@@ -82,8 +81,8 @@
 			<div class="publication-page-img__1"><img src="./img/Publications/Cover.svg" alt=""></div>
 			<h2 class="publication-page-title__1">Penalty for the Good Corporation: what will happen to Google and
 				others for violating the GDPR</h2>
-			<div class="publication-page-date">September 29</div>
-			<div class="publication-page-content">
+			<data class="publication-page-date">September 29</data>
+			<p class="publication-page-content">
 				On January 21, the French National Data Protection Commission
 				(CNIL) announced on its website that it had fined Google
 				for violating the EU's General Data Protection Regulation (GDPR). It took six months for the EU
@@ -100,7 +99,7 @@
 				particular to
 				create personalized
 				advertising offers.
-			</div>
+			</p>
 			<h2 class="publication-page-title__2">
 				To the attention of Ukrainian security officers: the inspection was
 				conducted online, without searches, without seizure
@@ -118,18 +117,18 @@
 					advertising.
 				</li>
 			</ul>
-			<div class="publication-page-content">
+			<p class="publication-page-content">
 				In the case of personalization of advertising, Google was sure to obtain the consent of users, because,
 				firstly, when
 				creating Google accounts, the user agrees to the Privacy Policy, and secondly, Google has a section "Ads
 				personalization", where you can disable this feature.
-			</div>
+			</p>
 			<div class="publication-page-img__2"> <img src="./img/Publications/Illustration.svg" alt=""></div>
-			<div class="publication-page-annot">
+			<article class="publication-page-annot">
 				This is what the ad personalization settings window in your Google
 				Account looks like
-			</div>
-			<div class="publication-page-content">
+			</article>
+			<p class="publication-page-content">
 				However, CNIL does not think so, because the information about the
 				personalization of advertising is not clear enough to
 				users. As an example, the Commission claims that the relevant "Personalization" window does not contain
@@ -139,11 +138,11 @@
 				Store, Google pictures, Gmail, etc.). ), and therefore, the user cannot realize to what extent the data
 				is used and how
 				exactly they can be combined.
-			</div>
+			</p>
 			<h3 class="publication-page-title__4">
 				So, let's walk through the text of the CNIL decision
 			</h3>
-			<div class="publication-page-content">
+			<p class="publication-page-content">
 				Why France and not Ireland. Google operates in Europe through a legal entity in Ireland. But the case
 				was not initiated
 				by the Irish, but by the French regulator. This is why it happened.
@@ -152,7 +151,7 @@
 				received, the body considers it. Because Google's data processing center is located in the United States
 				and the
 				complaint was first received in France, CNIL considered it.
-			</div>
+			</p>
 			<div class="publication-page-social">
 				<img class="publication-page-social__img" src="./img/Publications/Facebook.svg" alt="">
 				<img class="publication-page-social__img" src="./img/Publications/Telegram.svg" alt="">
@@ -170,59 +169,57 @@
 				<div class="publication">
 					<div class="publication__img"><img src="./img/Publications/Publication-1.svg" alt=""></div>
 					<div class="publication__wrapper">
-						<div class="publication__header">
+						<h3 class="publication__header">
 							<a href="./publication entry.html">Equity associate</a>
-						</div>
-						<div class="publication__date">April 22</div>
-						<div class="publication__text">
+						</h3>
+						<data class="publication__date">April 22</data>
+						<p class="publication__text">
 							I'm a jun on projects. I am a co-owner of a law firm. How it
 							happened. Before entering my parents told me that if I…
-						</div>
+						</p>
 					</div>
 				</div>
 				<div class="publication">
 					<div class="publication__img"><img src="./img/Publications/Publication-2.svg" alt=""></div>
 					<div class="publication__wrapper">
-						<div class="publication__header">
+						<h3 class="publication__header">
 							<a href="./publication entry.html">
 								Penalty for the Good Corporation: what will happen to Google
 								and others for violating the GDPR
 							</a>
-						</div>
-						<div class="publication__date">September 29</div>
-						<div class="publication__text">
+						</h3>
+						<data class="publication__date">September 29</data>
+						<p class="publication__text">
 							And why the recovery of 50 million euros could be a fateful precedent According to Mind.ua
 							January 21 National
 							Commission for Data Protection.
-						</div>
+						</p>
 					</div>
 				</div>
 				<div class="publication">
 					<div class="publication__img"><img src="./img/Publications/Publication-3.jpg" alt=""></div>
 					<div class="publication__wrapper">
-						<div class="publication__header">
+						<h3 class="publication__header">
 							<a href="./publication entry.html">Millennial Testament</a>
-						</div>
-						<div class="publication__date">August 19</div>
-						<div class="publication__text">
+						</h3>
+						<data class="publication__date">August 19</data>
+						<p class="publication__text">
 							What and how modern vloggers, opinion leaders and crypto-millionaires will inherit A typical
 							legacy of the Ukrainian
 							generation X looks like this: an apartment in…
-						</div>
+						</p>
 					</div>
 				</div>
-
 			</div>
-
 		</section>
 	</main>
 	<footer class="footer">
 		<div class="footer-box">
 			<div class="footer-left">
 				<div class="footer-left-up">
-					<div>Kyiv, Mechnikova str, 14/1</div>
+					<p>Kyiv, Mechnikova str, 14/1</p>
 					<img src="./img/AboutUsAssets/Dot separator.svg" alt="">
-					<div class="blue_1">ON MAP</div>
+					<a class="blue_1">ON MAP</a>
 				</div>
 				<div class="footer-left-down">
 					<a class="facebook-footer"></a>
@@ -232,7 +229,7 @@
 					<a href="mailto:contact@forstudy.space" class="blue_2">contact@forstudy.space</a>
 				</div>
 			</div>
-			<div class="footer-right">© 2021 HLEGAL Law company, LLC</div>
+			<p class="footer-right">© 2021 HLEGAL Law company, LLC</p>
 		</div>
 	</footer>
 	<script src="./js/script.js"></script>

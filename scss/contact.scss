@@ -28,10 +28,12 @@ body {
 		margin-bottom: 30px;
 	}
 	&__num {
+		display: block;
 		color: var(--main-alt, #46466e);
 		margin-bottom: 15px;
 	}
 	&__email {
+		display: block;
 		color: var(--active-regular, #24a3ff);
 		padding-bottom: 30px;
 		border-bottom: 4px solid var(--grey-separator);

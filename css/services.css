@@ -215,11 +215,13 @@ h6 {
 .header__right-block_2 {
   order: 3;
 }
+.header__right-block .header__icon-facebook,
 .header__right-block .facebook-header {
   width: 24px;
   height: 24px;
   background-image: url(../img/AboutUsAssets/Facebook-Header.svg);
 }
+.header__right-block .header__icon-facebook:hover,
 .header__right-block .facebook-header:hover {
   background-image: url(../img/icons/Facebook-Header.svg);
   cursor: pointer;
@@ -231,12 +233,12 @@ h6 {
 .header__lang {
   display: flex;
 }
-.header__lang p {
+.header__lang a {
   font-weight: bold;
   padding: 5px 7px;
   border-radius: 8px;
 }
-.header__lang p:hover {
+.header__lang a:hover {
   background-color: var(--grey-bg);
   color: var(--gray-text);
 }

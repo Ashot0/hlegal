@@ -121,6 +121,7 @@
 		align-items: center;
 		color: var(--gray-text);
 		white-space: nowrap;
+		.header__icon-facebook,
 		.facebook-header {
 			width: 24px;
 			height: 24px;
@@ -138,7 +139,7 @@
 	}
 	&__lang {
 		display: flex;
-		p {
+		a {
 			font-weight: bold;
 			padding: 5px 7px;
 			border-radius: 8px;
@@ -196,7 +197,6 @@
 			position: absolute;
 			padding: 10px 10px;
 			width: 100%;
-
 			&__box {
 				width: 100%;
 				display: flex;
@@ -205,7 +205,6 @@
 			}
 			display: flex;
 			justify-content: space-between;
-
 			.header__lang {
 			}
 			.active {
