@@ -5,6 +5,9 @@
 body {
 	font-family: "Montserrat", sans-serif;
 }
+.wrapper {
+	min-height: 90%;
+}
 .contact {
 	max-width: 80%;
 	display: flex;
@@ -134,6 +137,12 @@ body {
 		}
 	}
 }
+.footer {
+	margin-top: auto;
+	&-box {
+		border-top: none;
+	}
+}
 
 @media screen and (max-width: 1100px) {
 	.contact {
@@ -147,4 +156,7 @@ body {
 	}
 }
 @media screen and (max-width: 600px) {
+	.contact {
+		margin-top: 20px;
+	}
 }

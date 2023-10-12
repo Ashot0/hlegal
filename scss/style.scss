@@ -5,6 +5,10 @@
 body {
 	font-family: "Montserrat", sans-serif;
 }
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
 .colored-bg {
 	border-radius: 0px 0px 12px 12px;
 	background: var(--gradient-supersoft, linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%));
@@ -29,7 +33,7 @@ body {
 	}
 }
 .content {
-	background: center url(../img/Homepage/Symbol.svg) no-repeat;
+	background: center top / contain url(../img/Homepage/Symbol.svg) no-repeat;
 	pointer-events: none;
 	width: 100%;
 	margin-top: -173px;
@@ -198,7 +202,7 @@ body {
 .team {
 	display: flex;
 	justify-content: center;
-	margin: 0 10%;
+	margin: 60px 10% 0 10%;
 	.team-left {
 		border-radius: 12px 0px 0px 12px;
 		width: auto;
@@ -372,6 +376,7 @@ body {
 	}
 }
 .publication {
+	margin-bottom: 30px;
 	height: 530px;
 	max-width: 512px;
 	width: auto;
@@ -455,6 +460,9 @@ body {
 		.experience-left {
 			width: 100%;
 			align-items: center;
+			p {
+				text-align: center;
+			}
 
 			flex-direction: column;
 		}
